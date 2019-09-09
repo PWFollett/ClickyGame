@@ -7,18 +7,18 @@ import Image from "./components/image";
 import Img from "./components/img.json"
 
 //image imports
-import x from ""
-import x from ""
-import x from ""
-import x from ""
-import x from ""
-import x from ""
-import x from ""
-import x from ""
-import x from ""
-import x from ""
-import x from ""
-import x from ""
+import dancingdog from "./components/images/dancingdog"
+import doggiphy from "./components/images/doggiphy"
+import drivingdog from "./components/images/dancingdog"
+import exercisedog from "./components/images/exercisedog"
+import floatingdog from "./components/images/floatingdog"
+import happydog from "./components/images/happydog"
+import hiddendog from "./components/images/hiddendog"
+import pizzadog from "./components/images/pizzadog"
+import scooterdog from "./components/images/scooterdog"
+import slidingdog from "./components/images/slidingdog"
+import smilesdog from "./components/images/smilesdog"
+import typingdog from "./components/images/typingdog"
 
 import './App.css';
 
@@ -64,32 +64,32 @@ class App extends Component {
 
   imgSwitch = (name) => {
     switch (name) {
-      case "":
-        return `${}`
-      case "":
-        return `${}`
-      case "":
-        return `${}`
-      case "":
-        return `${}`
-      case "":
-        return `${}`
-      case "":
-        return `${}`
-      case "":
-        return `${}`
-      case "":
-        return `${}`
-      case "":
-        return `${}`
-      case "":
-        return `${}`
-      case "":
-        return `${}`
-      case "":
-        return `${}`
+      case "dancingdog":
+        return `${dancingdog}`
+      case "doggpihy1":
+        return `${doggiphy}`
+      case "drivingdog":
+        return `${drivingdog}`
+      case "exercisedog":
+        return `${exercisedog}`
+      case "floatingdog":
+        return `${floatingdog}`
+      case "happydog":
+        return `${happydog}`
+      case "hiddendog":
+        return `${hiddendog}`
+      case "pizzadog":
+        return `${pizzadog}`
+      case "scooterdog":
+        return `${scooterdog}`
+      case "slidingdog":
+        return `${slidingdog}`
+      case "smilesdog":
+        return `${smilesdog}`
+      case "typingdog":
+        return `${typingdog}`
       default:
-        return `${}`
+        return `${typingdog}`
     }
   }
 
