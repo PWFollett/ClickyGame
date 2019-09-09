@@ -4,23 +4,23 @@ import Header from "./components/header";
 import Main from "./components/main";
 import Footer from "./components/footer";
 import Image from "./components/image";
-import Img from "./components/img.json"
+import Img from "images";
 
 //image imports
-import dancingdog from "./components/images/dancingdog"
-import doggiphy from "./components/images/doggiphy"
-import drivingdog from "./components/images/dancingdog"
-import exercisedog from "./components/images/exercisedog"
-import floatingdog from "./components/images/floatingdog"
-import happydog from "./components/images/happydog"
-import hiddendog from "./components/images/hiddendog"
-import pizzadog from "./components/images/pizzadog"
-import scooterdog from "./components/images/scooterdog"
-import slidingdog from "./components/images/slidingdog"
-import smilesdog from "./components/images/smilesdog"
-import typingdog from "./components/images/typingdog"
+import dancingdog from "images/dancingdog.gif";
+import doggiphy from "images/doggiphy.gif";
+import drivingdog from "images/dancingdog.gif";
+import exercisedog from "images/exercisedog.gif";
+import floatingdog from "images/floatingdog.gif";
+import happydog from "images/happydog.gif";
+import hiddendog from "images/hiddendog.gif";
+import pizzadog from "images/pizzadog.gif";
+import scooterdog from "images/scooterdog.gif";
+import slidingdog from "images/slidingdog.gif";
+import smilesdog from "images/smilesdog.gif";
+import typingdog from "images/typingdog.gif";
 
-import './App.css';
+import './app.css';
 
 class App extends Component {
   state = {
