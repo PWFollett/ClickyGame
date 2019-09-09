@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
-import Image from "./components/Image";
-import Img from "./components/Img.json"
+import Navbar from "./components/navbar";
+import Header from "./components/header";
+import Main from "./components/main";
+import Footer from "./components/footer";
+import Image from "./components/image";
+import Img from "./components/img.json"
 
 //image imports
 import x from ""
