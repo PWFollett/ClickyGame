@@ -4,7 +4,7 @@ const Footer = () => (
 
 <footer className="footer bg-info">
     <div className="container">
-      <span className="text-dark">Shane Henry Copyright 2017
+      <span className="text-dark">Patrick Follett
       </span>
   </div>
 </footer>
