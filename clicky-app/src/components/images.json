@@ -1,48 +1,48 @@
 [{
     "name": "dancingdog",
-    "url": "images/dancingdog.gif"
+    "url": "/images/dancingdog.gif"
   },
   {
     "name": "doggiphy",
-    "url": "images/doggiphy.gif"
+    "url": "/images/doggiphy.gif"
   },
   {
     "name": "drivingdog",
-    "url": "images/drivingdog.gif"
+    "url": "/images/drivingdog.gif"
   },
   {
     "name": "exercisedog",
-    "url": "images/exercisedog.gif"
+    "url": "/images/exercisedog.gif"
   },
   {
     "name": "floatingdog",
-    "url": "images/floatingdog.gif"
+    "url": "/images/floatingdog.gif"
   },
   {
     "name": "happydog",
-    "url": "images/happydog.gif"
+    "url": "/images/happydog.gif"
   },
   {
     "name": "hiddendog",
-    "url": "images/hiddendog.gif"
+    "url": "/images/hiddendog.gif"
   },
   {
     "name": "pizzadog",
-    "url": "images/pizzadog.gif"
+    "url": "/images/pizzadog.gif"
   },
   {
     "name": "scooterdog",
-    "url": "images/scooterdog.gif"
+    "url": "/images/scooterdog.gif"
   },
   {
     "name": "slidingdog",
-    "url": "images/dancingdog.gif"
+    "url": "/images/slidingdog.gif"
   },
   {
     "name": "smilesdog",
-    "url": "images/dancingdog.gif"
+    "url": "/images/smilesdog.gif"
   },
   {
     "name": "typingdog",
-    "url": "images/dancingdog.gif"
+    "url": "/images/typingdog.gif"
   }]

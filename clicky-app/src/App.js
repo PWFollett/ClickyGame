@@ -4,23 +4,11 @@ import Header from "./components/header";
 import Main from "./components/main";
 import Footer from "./components/footer";
 import Image from "./components/image";
-import Img from "images";
+import Img from "./components/images.json";
 
-//image imports
-import dancingdog from "images/dancingdog.gif";
-import doggiphy from "images/doggiphy.gif";
-import drivingdog from "images/dancingdog.gif";
-import exercisedog from "images/exercisedog.gif";
-import floatingdog from "images/floatingdog.gif";
-import happydog from "images/happydog.gif";
-import hiddendog from "images/hiddendog.gif";
-import pizzadog from "images/pizzadog.gif";
-import scooterdog from "images/scooterdog.gif";
-import slidingdog from "images/slidingdog.gif";
-import smilesdog from "images/smilesdog.gif";
-import typingdog from "images/typingdog.gif";
 
-import './app.css';
+
+import './App.css';
 
 class App extends Component {
   state = {
@@ -31,14 +19,14 @@ class App extends Component {
   };
 
 //Shuffle Array
-  shuffleArray = (array) => {
-    let imgArray = Img;
-    for (let i = imgArray.length - 1; i > 0; i--) {
-      let j = Math.floor(Math.random() * (i + 1));
-      [imgArray[i], imgArray[j]] = [imgArray[j], imgArray[i]];
-    }
-    return imgArray
+shuffleArray = (array) => {
+  let imgArray = Img;
+  for (let i = imgArray.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [imgArray[i], imgArray[j]] = [imgArray[j], imgArray[i]];
   }
+  return imgArray
+}
 
   pickImg = (name) => {
     console.log("Clicked!!");
@@ -62,36 +50,36 @@ class App extends Component {
     }
   }
 
-  imgSwitch = (name) => {
-    switch (name) {
-      case "dancingdog":
-        return `${dancingdog}`
-      case "doggpihy1":
-        return `${doggiphy}`
-      case "drivingdog":
-        return `${drivingdog}`
-      case "exercisedog":
-        return `${exercisedog}`
-      case "floatingdog":
-        return `${floatingdog}`
-      case "happydog":
-        return `${happydog}`
-      case "hiddendog":
-        return `${hiddendog}`
-      case "pizzadog":
-        return `${pizzadog}`
-      case "scooterdog":
-        return `${scooterdog}`
-      case "slidingdog":
-        return `${slidingdog}`
-      case "smilesdog":
-        return `${smilesdog}`
-      case "typingdog":
-        return `${typingdog}`
-      default:
-        return `${typingdog}`
-    }
-  }
+  // imgSwitch = (name) => {
+  //   switch (name) {
+  //     case "dancingdog":
+  //       return `${dancingdog}`
+  //     case "doggpihy1":
+  //       return `${doggiphy}`
+  //     case "drivingdog":
+  //       return `${drivingdog}`
+  //     case "exercisedog":
+  //       return `${exercisedog}`
+  //     case "floatingdog":
+  //       return `${floatingdog}`
+  //     case "happydog":
+  //       return `${happydog}`
+  //     case "hiddendog":
+  //       return `${hiddendog}`
+  //     case "pizzadog":
+  //       return `${pizzadog}`
+  //     case "scooterdog":
+  //       return `${scooterdog}`
+  //     case "slidingdog":
+  //       return `${slidingdog}`
+  //     case "smilesdog":
+  //       return `${smilesdog}`
+  //     case "typingdog":
+  //       return `${typingdog}`
+  //     default:
+  //       return `${typingdog}`
+  //   }
+  // }
 
   render() {
     return (
@@ -99,9 +87,11 @@ class App extends Component {
         <Navbar correct={this.state.correct} topscore={this.state.topscore} message={this.state.message}/>
         <Header />
         <Main>
-          {this.shuffleArray(Img).map(image => (
-            <Image src={this.imgSwitch(image.name)} name={image.name} key={image.name} pickImg={this.pickImg}  />
-          ))}
+          {this.shuffleArray(Img).map(image => {
+            console.log(image)
+           return (
+            <Image src={image.url} name={image.name} key={image.name} pickImg={this.pickImg}  />
+          )})}
         </Main>
         <Footer />
       </div>
