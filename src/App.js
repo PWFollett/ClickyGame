@@ -90,7 +90,7 @@ shuffleArray = (array) => {
           {this.shuffleArray(Img).map(image => {
             console.log(image)
            return (
-            <Image src={image.url} name={image.name} key={image.name} pickImg={this.pickImg}  />
+            <Image src={process.env.PUBLIC_URL + image.url} name={image.name} key={image.name} pickImg={this.pickImg}  />
           )})}
         </Main>
         <Footer />

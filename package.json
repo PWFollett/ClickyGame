@@ -2,7 +2,7 @@
   "name": "clicky-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://PWFollett.github.io/ClickyGame/clicky-app/",
+  "homepage": "https://PWFollett.github.io/ClickyGame/",
   "dependencies": {
     "eslint": "^6.3.0",
     "gh-pages": "^2.1.1",
