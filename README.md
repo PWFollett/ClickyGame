@@ -1,5 +1,6 @@
 https://pwfollett.github.io/ClickyGame/
 
+MEMORY CLICKY GAME MADE WITH REACT!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
